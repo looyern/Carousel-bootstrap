@@ -31,9 +31,19 @@
 </div>
 ```
 以上是简易轮播图的代码<br>
-其中包含的知识点：<br>
-1.`data-ride="carousel"`用于激活轮播，让图片实现自动播放<br>
-2.有序列表的作用是用来添加轮播图下方的小圆点;<br>
-3.`data-target="#myCarousel" ` 点击圆点可以切换图片;<br>
-4.`data-slide-to` 用于切换至相对应的图片,`data-slide-to="0"`数字代表的是图片的索引值，索引从0开始;<br>
-5.`<li data-target="#myCarousel" data-slide-to="0" class="active"></li>`* `data-target`指向`data-ride`所在元素的id
+知识点详解：<br> 
+```
+<div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+      <ol class="carousel-indicators">
+         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+         <li data-target="#myCarousel" data-slide-to="1"></li>
+         <li data-target="#myCarousel" data-slide-to="2"></li>                
+      </ol>
+```
+   *  有序列表的作用是用来添加轮播图下方的小圆点;
+   *  `data-ride="carousel"`用于激活轮播，让图片实现自动播放;
+   *  `data-target`指向`data-ride`所在元素的id;
+   *  `data-target="#myCarousel" ` 点击圆点可以切换图片;
+   *  `data-slide-to` 用于切换至相对应的图片,`data-slide-to="0"`数字代表的是图片的索引值，索引从0开始;
+
+
