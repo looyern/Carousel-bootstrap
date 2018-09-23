@@ -2,13 +2,12 @@
 ```
 <div class="container">
         <h2 class="text-center">轮播展示</h2>
-        <!--data-ride="carousel"激活轮播，即让图片自动播放-->
         <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
             <!--控制器,即轮播图下方的小圆点-->
             <ol class="carousel-indicators">
                 <!--data-target="#myCarousel"用于点击圆点切换图片-->
-                <li data-target="#myCarousel" data-slide-to="2" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="4"></li>
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>                
             </ol>
             <!--轮播项目-->
@@ -34,8 +33,19 @@
     </div>
 ```
 以上是简易轮播图的代码<br>
-其中包含的知识点：<br>1.
+其中包含的知识点：<br>1.激活轮播，即让图片实现自动播放：
 ```
 data-ride="carousel"
 ```
-激活轮播，即让图片实现自动播放
+2.
+```
+<ol class="carousel-indicators">
+   <!--data-target="#myCarousel"用于点击圆点切换图片-->
+   <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+   <li data-target="#myCarousel" data-slide-to="1"></li>
+   <li data-target="#myCarousel" data-slide-to="2"></li>                
+</ol>
+```
+                有序列表的作用是用来添加轮播图下方的小圆点;
+                data-target="#myCarousel"  点击圆点可以切换图片；
+                data-slide-to 用于切换至相对应的图片。
